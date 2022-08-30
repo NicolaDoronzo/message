@@ -2,12 +2,22 @@
   --selected-slide: 0;
 }
 
+img {
+  max-width: 350px;
+  min-width: 200px;
+  width: 80%;
+  height: auto;
+  margin-top: 1em;
+}
+
 body {
   margin: 0;
+  padding-inline: .5em;
   background-color: rgba(20, 20, 20);
   color: #f1f1f1;
   user-select: none;
   font-size: clamp(1.5rem, 8vw, 4rem);
+  text-align: center;
 }
 
 main {
@@ -29,4 +39,10 @@ main {
   height: 100%;
   transform: translateX(calc(-100% * var(--selected-slide)));
   transition: transform .75s cubic-bezier(.1, .18, 0, 1.01);
+}
+
+.signature {
+  font-size: clamp(1.3rem, 6vw, 3rem);
+  margin-top: 2em;
+  text-align: left;
 }
